@@ -1,73 +1,82 @@
-# React + TypeScript + Vite
+# Landing Page DevOps
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Landing page moderna e responsiva desenvolvida para apresentar o **time de DevOps**, destacando suas **especialidades, competências técnicas e atuação**, construída com **React**, **Vite** e **Tailwind CSS**, contando com suporte a **tema claro/escuro** e **animações suaves** por meio do **Framer Motion**.
 
-Currently, two official plugins are available:
+## 🧩 Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ **React** — Biblioteca para construção da interface
+- ⚡ **Vite** — Ferramenta de build rápida e moderna
+- 🎨 **Tailwind CSS** — Estilização utilitária e responsiva
+- 🌗 **Dark / Light Mode** — Alternância de temas
+- 🎞 **Framer Motion** — Animações e transições suaves
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✔️ Apresentação do time de DevOps e suas especialidades
+- ✔️ Layout moderno e limpo
+- ✔️ Alternância entre tema claro e escuro
+- ✔️ Animações suaves na entrada dos componentes
+- ✔️ Design totalmente responsivo
 
-## Expanding the ESLint configuration
+## 📂 Estrutura do Projeto (resumo)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+├── components/        # Componentes reutilizáveis
+├── pages/             # Páginas da aplicação
+├── styles/            # Estilos globais (se houver)
+├── App.tsx            # Componente principal
+├── main.tsx           # Ponto de entrada
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ▶️ Como Executar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1️⃣ Clonar o repositório
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
 ```
+
+### 2️⃣ Acessar a pasta do projeto
+
+```bash
+cd landing-page-devops
+```
+
+### 3️⃣ Instalar as dependências
+
+```bash
+npm install
+```
+
+### 4️⃣ Executar em ambiente de desenvolvimento
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em:
+
+👉 `http://localhost:5173`
+
+## 🌙 Tema Claro / Escuro
+
+O controle de tema é feito por meio das classes `dark:` do **Tailwind CSS**, permitindo a troca dinâmica de cores conforme a preferência do usuário.
+
+## 🎞 Animações
+
+As animações são implementadas com **Framer Motion**, proporcionando:
+
+- Transições suaves
+- Animações de entrada dos componentes
+- Melhor experiência de navegação
+
+## 📌 Requisitos
+
+- Node.js **18+**
+- npm ou yarn
+
+## 📄 Licença
+
+Este projeto está sob a licença **MIT**. Sinta-se livre para usar, modificar e distribuir.
+
