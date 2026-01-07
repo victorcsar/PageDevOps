@@ -57,7 +57,7 @@ npm run dev
 
 O projeto estará disponível em:
 
-👉 `http://localhost:5173`
+ `http://localhost:5173`
 
 ## 🌙 Tema Claro / Escuro
 
